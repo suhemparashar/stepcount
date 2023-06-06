@@ -17,6 +17,7 @@
 		971978DA2A2E0E870043D602 /* StepCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971978D92A2E0E870043D602 /* StepCounterTests.swift */; };
 		971978E42A2E0E870043D602 /* StepCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971978E32A2E0E870043D602 /* StepCounterUITests.swift */; };
 		971978E62A2E0E870043D602 /* StepCounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971978E52A2E0E870043D602 /* StepCounterUITestsLaunchTests.swift */; };
+		971978F42A2EE8FB0043D602 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971978F32A2EE8FB0043D602 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		971978DF2A2E0E870043D602 /* StepCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		971978E32A2E0E870043D602 /* StepCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterUITests.swift; sourceTree = "<group>"; };
 		971978E52A2E0E870043D602 /* StepCounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		971978F22A2E0EBD0043D602 /* StepCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepCounter.entitlements; sourceTree = "<group>"; };
+		971978F32A2EE8FB0043D602 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +104,10 @@
 		971978BE2A2E0E860043D602 /* StepCounter */ = {
 			isa = PBXGroup;
 			children = (
+				971978F22A2E0EBD0043D602 /* StepCounter.entitlements */,
 				971978BF2A2E0E860043D602 /* AppDelegate.swift */,
 				971978C12A2E0E860043D602 /* SceneDelegate.swift */,
+				971978F32A2EE8FB0043D602 /* ViewModel.swift */,
 				971978C32A2E0E860043D602 /* ViewController.swift */,
 				971978C52A2E0E860043D602 /* Main.storyboard */,
 				971978CB2A2E0E870043D602 /* Assets.xcassets */,
@@ -261,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				971978F42A2EE8FB0043D602 /* ViewModel.swift in Sources */,
 				971978CA2A2E0E860043D602 /* StepCounter.xcdatamodeld in Sources */,
 				971978C42A2E0E860043D602 /* ViewController.swift in Sources */,
 				971978C02A2E0E860043D602 /* AppDelegate.swift in Sources */,
@@ -439,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepCounter/StepCounter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z3QQ492P6Z;
@@ -467,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StepCounter/StepCounter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z3QQ492P6Z;
